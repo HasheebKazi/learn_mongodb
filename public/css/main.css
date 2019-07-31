@@ -1,0 +1,33 @@
+h1 {
+    text-align: center;
+    font-size: 6rem;
+}
+
+/* ==== main body */
+    /* === control-panels */
+    .control-panel {
+        height: 400px;
+        width: 700px;
+        background: rgb(179, 166, 166);
+        margin: 5rem auto;
+    }
+
+    .control-panel__button {
+        /* size */
+        margin: 1rem;
+        padding: 10px;
+        /* background */
+        background-color: green;
+        border: 2px solid white;
+
+        /* font */
+        font-size: 2rem;
+        color: white;
+    }
+
+    .control-panel__button:hover {
+        background-color: white;
+        border: 2px solid green;
+        color: green;
+
+    }
