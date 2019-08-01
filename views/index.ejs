@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +10,58 @@
 
     <title>Test Page</title>
 </head>
+
 <body>
     <h1>This is a Title</h1>
     <div class="control-panel">
 
-        <form action="/new-data" method="POST">
-            <button class="control-panel__button">Create</button>
-        </form>
+        <!-- <form action="/new-data" method="POST">
+            <div class="form-control">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="form-control">
+                <label for="fav">Favorite Activity</label>
+                <input type="text" name="fav" id="fav">
+            </div>
+            <button class="control-panel__button" type="submit">Create</button>
+        </form> -->
+        <div class="form-style-8">
+            <h2>Enter New Cat</h2>
+            <form method="POST" target='/new-data'>
+                <input type="text" name="name" placeholder="Full Name" />
+                <input type="text" name="fav" placeholder="Favorite Activity" />
+                <!-- <input type="email" name="field2" placeholder="Email" />
+                <input type="url" name="field3" placeholder="Website" />
+                <textarea placeholder="Message" onkeyup="adjust_textarea(this)"></textarea> -->
+                <input type="submit" value="Create" />
+            </form>
+        </div>
+
+        <hr>
+
+        <div class="form-style-8">
+                <h2>Enter New Cat</h2>
+                <form method="POST" target='/new-data'>
+                    <input type="text" name="name" placeholder="Full Name" />
+                    <input type="text" name="fav" placeholder="Favorite Activity" />
+                    <!-- <input type="email" name="field2" placeholder="Email" />
+                    <input type="url" name="field3" placeholder="Website" />
+                    <textarea placeholder="Message" onkeyup="adjust_textarea(this)"></textarea> -->
+                    <input type="submit" value="Create" />
+                </form>
+            </div>
+
+
     </div>
+
+    <script type="text/javascript">
+        //auto expand textarea
+        function adjust_textarea(h) {
+            h.style.height = "20px";
+            h.style.height = (h.scrollHeight)+"px";
+        }
+    </script>
 </body>
+
 </html>
